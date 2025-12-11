@@ -21,9 +21,11 @@ class RabbitMQEventPublisher:
     def __init__(self) -> None:
         self.exchange = "cars_events_exchange"
         self.queue = "cars_events_queue"
-        self._setup_connection()
         self.connection = None
         self.channel = None
+        self.routing_key = "cars_events"
+        self.topology_ready = False
+        self._setup_connection()
         self._create_topology()
 
     def _setup_connection(self):
@@ -60,6 +62,7 @@ class RabbitMQEventPublisher:
             channel = self._get_channel()
             try:
                 self._ensure_topology(channel)
+                self.topology_ready = True
                 logger.info(f"✅ Топология создана: exchange '{self.exchange}' -> queue '{self.queue}'")
             except Exception as e:
                 if "EXCHANGE_TYPE_MISMATCH" in str(e):
@@ -87,12 +90,14 @@ class RabbitMQEventPublisher:
                     channel = self._get_channel()
 
                     self._ensure_topology(channel)
+                    self.topology_ready = True
                     logger.info(f"✅ Топология пересоздана: exchange '{self.exchange}' -> queue '{self.queue}'")
                 else:
                     raise
         except Exception as e:
             logger.error(f"❌ Не удалось создать топологию при инициализации: {e}", exc_info=True)
             logger.warning("Топология будет создана при первой отправке события")
+            self.topology_ready = False
 
     def _ensure_topology(self, channel):
         """Создаёт exchange и очередь, если их нет."""
@@ -119,12 +124,11 @@ class RabbitMQEventPublisher:
             # Очередь уже существует - это нормально
             pass
 
-        routing_key = "cars_events"
         try:
             channel.queue_bind(
                 exchange=self.exchange,
                 queue=self.queue,
-                routing_key=routing_key,
+                routing_key=self.routing_key,
             )
         except Exception:
             # Привязка уже существует - это нормально
@@ -149,12 +153,13 @@ class RabbitMQEventPublisher:
         try:
             channel = self._get_channel()
 
-            self._ensure_topology(channel)
+            if not self.topology_ready:
+                self._ensure_topology(channel)
+                self.topology_ready = True
 
-            routing_key = "cars_events"
             channel.basic_publish(
                 exchange=self.exchange,
-                routing_key=routing_key,
+                routing_key=self.routing_key,
                 body=body,
                 properties=pika.BasicProperties(
                     content_type="application/json",
