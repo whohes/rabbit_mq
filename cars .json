@@ -1,0 +1,508 @@
+{
+  "cars": [
+    {
+      "firm": "Toyota",
+      "model": "Camry",
+      "year": 2018,
+      "power": 178,
+      "color": "Red",
+      "price": 25000
+    },
+    {
+      "firm": "Honda",
+      "model": "Accord",
+      "year": 2019,
+      "power": 192,
+      "color": "White",
+      "price": 27000
+    },
+    {
+      "firm": "Ford",
+      "model": "Mustang",
+      "year": 2020,
+      "power": 310,
+      "color": "Black",
+      "price": 35000
+    },
+    {
+      "firm": "Chevrolet",
+      "model": "Camaro",
+      "year": 2021,
+      "power": 455,
+      "color": "Yellow",
+      "price": 45000
+    },
+	{
+      "firm": "Lada",
+      "model": "Vesta",
+      "year": 2018,
+      "power": 106,
+      "color": "white",
+      "price": 7000
+    },
+    {
+      "firm": "BMW",
+      "model": "M3",
+      "year": 2019,
+      "power": 425,
+      "color": "Blue",
+      "price": 55000
+    },
+    {
+      "firm": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2020,
+      "power": 255,
+      "color": "Silver",
+      "price": 40000
+    },
+    {
+      "firm": "Audi",
+      "model": "A4",
+      "year": 2018,
+      "power": 190,
+      "color": "Gray",
+      "price": 30000
+    },
+    {
+      "firm": "Lexus",
+      "model": "RX",
+      "year": 2021,
+      "power": 295,
+      "color": "Black",
+      "price": 45000
+    },
+    {
+      "firm": "Nissan",
+      "model": "Altima",
+      "year": 2019,
+      "power": 188,
+      "color": "Red",
+      "price": 25000
+    },
+    {
+      "firm": "Tesla",
+      "model": "Model S",
+      "year": 2021,
+      "power": 670,
+      "color": "White",
+      "price": 100000
+    },
+    {
+      "firm": "Porsche",
+      "model": "911",
+      "year": 2020,
+      "power": 379,
+      "color": "Blue",
+      "price": 90000
+    },
+    {
+      "firm": "Subaru",
+      "model": "WRX",
+      "year": 2018,
+      "power": 268,
+      "color": "Gray",
+      "price": 28000
+    },
+    {
+      "firm": "Mazda",
+      "model": "CX-5",
+      "year": 2021,
+      "power": 187,
+      "color": "Red",
+      "price": 35000
+    },
+    {
+      "firm": "Jeep",
+      "model": "Grand Cherokee",
+      "year": 2020,
+      "power": 293,
+      "color": "Black",
+      "price": 45000
+    },
+    {
+      "firm": "Volkswagen",
+      "model": "Golf GTI",
+      "year": 2019,
+      "power": 228,
+      "color": "White",
+      "price": 30000
+    },
+    {
+      "firm": "Volvo",
+      "model": "XC90",
+      "year": 2020,
+      "power": 316,
+      "color": "Silver",
+      "price": 55000
+    },
+    {
+      "firm": "Kia",
+      "model": "Stinger",
+      "year": 2021,
+      "power": 365,
+      "color": "Black",
+      "price": 40000
+    },
+    {
+      "firm": "Hyundai",
+      "model": "Sonata",
+      "year": 2018,
+      "power": 185,
+      "color": "Gray",
+      "price": 25000
+    },
+    {
+      "firm": "Infiniti",
+      "model": "Q50",
+      "year": 2019,
+      "power": 300,
+      "color": "Red",
+      "price": 35000
+    },
+    {
+      "firm": "Cadillac",
+      "model": "XT5",
+      "year": 2020,
+      "power": 310,
+      "color": "White",
+      "price": 45000
+    },
+    {
+      "firm": "Land Rover",
+      "model": "Range Rover Sport",
+      "year": 2021,
+      "power": 355,
+      "color": "Black",
+      "price": 80000
+    },
+    {
+      "firm": "Lamborghini",
+      "model": "Huracan",
+      "year": 2020,
+      "power": 631,
+      "color": "Yellow",
+      "price": 300000
+    },
+    {
+      "firm": "Ferrari",
+      "model": "488 GTB",
+      "year": 2019,
+      "power": 661,
+      "color": "Red",
+      "price": 300000
+    },
+    {
+      "firm": "Bugatti",
+      "model": "Chiron",
+      "year": 2021,
+      "power": 1500,
+      "color": "Blue",
+      "price": 3000000
+    },
+    {
+      "firm": "Maserati",
+      "model": "Quattroporte",
+      "year": 2018,
+      "power": 424,
+      "color": "Black",
+      "price": 70000
+    },
+    {
+      "firm": "Bentley",
+      "model": "Continental GT",
+      "year": 2020,
+      "power": 626,
+      "color": "White",
+      "price": 250000
+    },
+    {
+      "firm": "Rolls-Royce",
+      "model": "Phantom",
+      "year": 2021,
+      "power": 563,
+      "color": "Silver",
+      "price": 500000
+    },
+    {
+      "firm": "Aston Martin",
+      "model": "DB11",
+      "year": 2019,
+	  "power": 630,
+      "color": "Black",
+      "price": 250000
+    },
+    {
+      "firm": "McLaren",
+      "model": "720S",
+      "year": 2020,
+      "power": 710,
+      "color": "Orange",
+      "price": 300000
+    },
+    {
+      "firm": "Lexus",
+      "model": "LS",
+      "year": 2018,
+      "power": 416,
+      "color": "Gray",
+      "price": 80000
+    },
+    {
+      "firm": "Jaguar",
+      "model": "F-Type",
+      "year": 2021,
+      "power": 575,
+      "color": "Red",
+      "price": 120000
+    },
+    {
+      "firm": "Alfa Romeo",
+      "model": "Giulia",
+      "year": 2019,
+      "power": 505,
+      "color": "White",
+      "price": 80000
+    },
+    {
+      "firm": "Lotus",
+      "model": "Evora",
+      "year": 2020,
+      "power": 416,
+      "color": "Blue",
+      "price": 90000
+    },
+    {
+      "firm": "Porsche",
+      "model": "Panamera",
+      "year": 2021,
+      "power": 620,
+      "color": "Black",
+      "price": 150000
+    },
+    {
+      "firm": "Audi",
+      "model": "RS7",
+      "year": 2020,
+      "power": 591,
+      "color": "Gray",
+      "price": 120000
+    },
+    {
+      "firm": "Mercedes-Benz",
+      "model": "AMG GT",
+      "year": 2018,
+      "power": 469,
+      "color": "Red",
+      "price": 100000
+    },
+    {
+      "firm": "BMW",
+      "model": "M5",
+      "year": 2021,
+      "power": 617,
+      "color": "Black",
+      "price": 120000
+    },
+    {
+      "firm": "Ford",
+      "model": "GT",
+      "year": 2020,
+      "power": 660,
+      "color": "Blue",
+      "price": 500000
+    },
+    {
+      "firm": "Chevrolet",
+      "model": "Corvette",
+      "year": 2021,
+      "power": 495,
+      "color": "White",
+      "price": 70000
+    },
+    {
+      "firm": "Dodge",
+      "model": "Challenger",
+      "year": 2018,
+      "power": 485,
+      "color": "Black",
+      "price": 50000
+    },
+    {
+      "firm": "Mazda",
+      "model": "MX-5 Miata",
+      "year": 2019,
+      "power": 181,
+      "color": "Red",
+      "price": 25000
+    },
+    {
+      "firm": "Nissan",
+      "model": "GT-R",
+      "year": 2020,
+      "power": 565,
+      "color": "Blue",
+      "price": 120000
+    },
+    {
+      "firm": "Subaru",
+      "model": "BRZ",
+      "year": 2021,
+      "power": 205,
+      "color": "White",
+      "price": 28000
+    },
+    {
+      "firm": "Toyota",
+      "model": "Supra",
+      "year": 2020,
+      "power": 335,
+      "color": "Red",
+      "price": 50000
+    },
+    {
+      "firm": "Volkswagen",
+      "model": "Arteon",
+      "year": 2019,
+      "power": 268,
+      "color": "Gray",
+      "price": 35000
+    },
+    {
+      "firm": "Volvo",
+      "model": "S90",
+      "year": 2020,
+      "power": 316,
+      "color": "Black",
+      "price": 50000
+    },
+    {
+      "firm": "Kia",
+      "model": "Optima",
+      "year": 2018,
+      "power": 245,
+      "color": "White",
+      "price": 25000
+    },
+    {
+      "firm": "Hyundai",
+      "model": "Veloster",
+      "year": 2021,
+      "power": 275,
+      "color": "Blue",
+      "price": 28000
+    },
+    {
+      "firm": "Infiniti",
+      "model": "QX50",
+      "year": 2019,
+      "power": 268,
+      "color": "Black",
+      "price": 40000
+    },
+	{
+      "firm": "Hyundai",
+      "model": "Solaris",
+      "year": 2019,
+      "power": 100,
+      "color": "silver",
+      "price": 9000
+    },
+    {
+      "firm": "Cadillac",
+      "model": "CT6",
+      "year": 2020,
+      "power": 500,
+      "color": "Silver",
+      "price": 80000
+    },
+	{
+      "firm": "Renault",
+      "model": "Duster",
+      "year": 2019,
+      "power": 114,
+      "color": "brown",
+      "price": 10000
+    },
+    {
+      "firm": "Land Rover",
+      "model": "Discovery",
+      "year": 2021,
+      "power": 340,
+      "color": "Gray",
+      "price": 60000
+    },
+	{
+      "firm": "Peugeot",
+      "model": "3008",
+      "year": 2020,
+      "power": 165,
+      "color": "blue",
+      "price": 2000000
+    },
+    {
+      "firm": "Lamborghini",
+      "model": "Aventador",
+      "year": 2020,
+      "power": 700,
+      "color": "Orange",
+      "price": 500000
+    },
+    {
+      "firm": "Ferrari",
+      "model": "812 Superfast",
+      "year": 2019,
+      "power": 789,
+      "color": "Red",
+      "price": 400000
+    },
+    {
+      "firm": "Bugatti",
+      "model": "Veyron",
+      "year": 2018,
+      "power": 1001,
+      "color": "Black",
+      "price": 2000000
+    },
+    {
+      "firm": "Maserati",
+      "model": "GranTurismo",
+      "year": 2020,
+      "power": 454,
+      "color": "White",
+      "price": 150000
+    },
+    {
+      "firm": "Bentley",
+	  "model": "Bentayga",
+      "year": 2021,
+      "power": 542,
+      "color": "Black",
+      "price": 250000
+    },
+    {
+      "firm": "Rolls-Royce",
+      "model": "Cullinan",
+      "year": 2019,
+      "power": 563,
+      "color": "White",
+      "price": 400000
+    },
+    {
+      "firm": "Aston Martin",
+      "model": "Vanquish",
+      "year": 2018,
+      "power": 580,
+      "color": "Black",
+      "price": 300000
+    },
+    {
+      "firm": "McLaren",
+      "model": "570S",
+      "year": 2020,
+      "power": 562,
+      "color": "Blue",
+      "price": 200000
+    }
+  ]
+}

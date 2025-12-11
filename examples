@@ -1,0 +1,19 @@
+Дилер (PUT /dealers/1):
+{
+  "name": "Updated Dealer",
+  "city": "Минск",
+  "address": "ул. Новая, 2",
+  "area": "Центральный",
+  "rating": 4.7
+}
+
+Авто (PUT /cars/1):
+{
+  "firm": "Toyota",
+  "model": "Corolla",
+  "year": 2021,
+  "power": 150,
+  "color": "Black",
+  "price": 16000,
+  "dealer_id": 1
+}
