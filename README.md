@@ -8,4 +8,4 @@ cars_events_queue
 
 Создание exchange
 
-cars_events_exchange, в ключ пишем cars_events	для связи с cars_events_queue
+cars_events_exchange
