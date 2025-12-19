@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from django.http import JsonResponse, HttpResponseNotAllowed, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -158,4 +159,36 @@ def car_detail(request, car_id: int):
     return HttpResponseNotAllowed(["GET", "PUT", "DELETE"])
 
 
+def cars_ui(request):
+    """Простой одностраничный UI поверх REST API."""
+    from pathlib import Path
+    import os
 
+    base_dir = Path(__file__).resolve().parent.parent
+    web_ui_dir = base_dir / "web_ui"
+
+    # Читаем HTML
+    html_path = web_ui_dir / "index.html"
+    with open(html_path, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # Встраиваем CSS и JS прямо в HTML
+    css_path = web_ui_dir / "style.css"
+    with open(css_path, "r", encoding="utf-8") as f:
+        css_content = f.read()
+
+    js_path = web_ui_dir / "app.js"
+    with open(js_path, "r", encoding="utf-8") as f:
+        js_content = f.read()
+
+    # Встраиваем CSS и JS в HTML
+    html = html.replace(
+        '  <!-- CSS будет встроен через views.py -->',
+        f'  <style>{css_content}</style>'
+    )
+    html = html.replace(
+        '  <!-- JS будет встроен через views.py -->',
+        f'  <script>{js_content}</script>'
+    )
+
+    return HttpResponse(html)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Автомобили</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSS будет встроен через views.py -->
+</head>
+<body>
+  <div class="page">
+    <h1>Автомобили</h1>
+    <div class="subtitle">REST API: просмотр, поиск, редактирование и удаление</div>
+
+    <div class="toolbar">
+      <div class="search-group">
+        <label for="search-id">Поиск по ID:</label>
+        <input id="search-id" type="number" placeholder="например, 1" />
+        <button class="btn-secondary" id="search-btn">Найти</button>
+      </div>
+      <button class="btn-primary" id="reload-btn">Обновить список</button>
+    </div>
+
+    <div id="status" class="status"></div>
+    <div id="cars-container" class="cars-grid"></div>
+  </div>
+
+  <!-- JS будет встроен через views.py -->
+</body>
+</html>
