@@ -9,3 +9,7 @@ cars_events_queue
 Создание exchange
 
 cars_events_exchange
+
+Открытие web UI после запуска сервера
+
+http://127.0.0.1:8000/cars-ui
